@@ -16,17 +16,17 @@ $flash = new FlashMessage($config);
 // set a new flash message
 
 // Test Errors
-$flash->set('badType', 'validAction');
+$flash->set('badType', 'created');
 $flash->set('warning', 'badAction');
 
 $flash->set('primary', 'created');
 $flash->set('secondary', 'updated');
-$flash->set('light', 'deleted');
+$flash->set('light', 'deleted', '<i class="bi bi-trash3"></i>');
 $flash->set('dark', 'created');
-$flash->set('success', 'updated');
-$flash->set('info', 'created');
+$flash->set('success', 'updated', '<i class="bi bi-check-circle-fill"></i>');
+$flash->set('info', 'created', '<i class="bi bi-info-circle-fill"></i>');
 $flash->set('warning', 'updated');
-$flash->set('danger', 'deleted');
+$flash->set('danger', 'deleted', '<i class="bi bi-exclamation-triangle-fill"></i>');
 ?>
 <!doctype html>
 <html lang="en">
