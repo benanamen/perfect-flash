@@ -13,7 +13,7 @@ class FlashMessage
     public function __construct($config)
     {
         $this->config = $config;
-        if ($_SESSION['flash'] === FALSE) {
+        if ($_SESSION['flash'] === false) {
             $_SESSION['flash'] = [];
         }
         $this->messages = $_SESSION['flash'];
