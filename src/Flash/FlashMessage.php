@@ -24,13 +24,13 @@ class FlashMessage
         $allowedTypes = ['primary', 'secondary', 'light', 'dark', 'success', 'info', 'warning', 'danger'];
 
         if (!in_array($type, $allowedTypes)) {
-            $message = sprintf('Invalid type "%s" provided', $type);
+            $message = sprintf('ERROR: Invalid type "%s" provided', $type);
             $this->messages[] = ['type' => 'danger', 'message' => $message, 'icon' => ''];
             return $_SESSION['flash'] = $this->messages;
         }
 
         if (!isset($this->config[$type][$action])) {
-            $message = sprintf('Invalid action "%s" provided', $action);
+            $message = sprintf('ERROR: Invalid action "%s" provided', $action);
             $this->messages[] = ['type' => 'danger', 'message' => $message, 'icon' => ''];
             return $_SESSION['flash'] = $this->messages;
         }
@@ -44,7 +44,7 @@ class FlashMessage
     {
         foreach ($this->messages as $message) {
             printf(
-                '<div class="alert alert-%s alert-dismissible fade show" role="alert">%s<strong>%s</strong><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>',
+                '<div class="alert alert-%s alert-dismissible fade show" role="alert">%s <strong>%s</strong><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>',
                 $message['type'],
                 $message['icon'],
                 $message['message']
