@@ -1,0 +1,12 @@
+{
+    "name": "krubio/perfect-flash",
+    "autoload": {
+        "psr-4": {
+            "PerfectApp\\": "src/"
+        }
+    },
+    "require-dev": {
+        "codeception/codeception": "^5.0",
+        "codeception/module-asserts": "*"
+    }
+}
