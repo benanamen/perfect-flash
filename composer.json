@@ -1,12 +1,31 @@
 {
-    "name": "krubio/perfect-flash",
-    "autoload": {
-        "psr-4": {
-            "PerfectApp\\": "src/"
-        }
-    },
-    "require-dev": {
-        "codeception/codeception": "^5.0",
-        "codeception/module-asserts": "*"
+  "name": "krubio/perfect-flash",
+  "description": "Session Based Flash Messaging - Bootstrap 5",
+  "keywords": [
+    "Flash",
+    "Flash Message",
+    "Session Flash Messaging",
+    "Bootstrap 5"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kevin Rubio",
+      "email": "ducatikevin@yahoo.com",
+      "homepage": "https://github.com/benanamen/perfect-flash",
+      "role": "Developer"
     }
+  ],
+  "require": {
+    "php": ">=8.0.0"
+  },
+  "require-dev": {
+    "codeception/codeception": "^5.0",
+    "codeception/module-asserts": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "PerfectApp\\": "src/"
+    }
+  }
 }
