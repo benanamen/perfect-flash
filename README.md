@@ -1,3 +1,10 @@
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=benanamen_perfect-flash&metric=bugs)](https://sonarcloud.io/summary/new_code?id=benanamen_perfect-flash)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=benanamen_perfect-flash&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=benanamen_perfect-flash)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=benanamen_perfect-flash&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=benanamen_perfect-flash)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=benanamen_perfect-flash&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=benanamen_perfect-flash)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=benanamen_perfect-flash&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=benanamen_perfect-flash)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=benanamen_perfect-flash&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=benanamen_perfect-flash)
+
 FlashMessage Usage Guide:
 
 The FlashMessage class is a convenient way to display messages to your users. It is initialized with a config array that contains messages for different types of actions. To use it, follow these steps:

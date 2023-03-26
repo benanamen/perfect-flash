@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-require './vendor/autoload.php';
+require_once './vendor/autoload.php';
 
 // include config and flash message class
 use PerfectApp\Flash\FlashMessage;
