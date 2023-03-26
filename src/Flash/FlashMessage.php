@@ -13,9 +13,7 @@ class FlashMessage
     public function __construct($config)
     {
         $this->config = $config;
-        if ($_SESSION['flash'] === false) {
-            $_SESSION['flash'] = [];
-        }
+        $_SESSION['flash'] = [];
         $this->messages = $_SESSION['flash'];
         $_SESSION['flash'] = [];
     }
@@ -46,6 +44,7 @@ class FlashMessage
         foreach ($this->messages as $message) {
             printf(
                 '<div class="alert alert-%s alert-dismissible fade show" role="alert">%s <strong>%s</strong><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>',
+
                 $message['type'],
                 $message['icon'],
                 $message['message']

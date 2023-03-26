@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-return [
+const MESSAGES = [
     'primary' => [
         'created' => 'Record created successfully',
         // Add more actions for primary type here

@@ -7,8 +7,7 @@ use PerfectApp\Flash\FlashMessage;
 
 session_start();
 
-$config = require_once 'src/config/config-flash.php';
-$flash = new FlashMessage($config);
+$flash = new FlashMessage(MESSAGES);
 
 // Test Errors
 $flash->set('badType', 'created');

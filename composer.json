@@ -24,6 +24,7 @@
     "codeception/module-asserts": "*"
   },
   "autoload": {
+    "files": ["src/config/config-flash.php"],
     "psr-4": {
       "PerfectApp\\": "src/"
     }
