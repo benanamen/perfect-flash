@@ -45,7 +45,8 @@ final class FlashMessageTest extends TestCase
     {
         $flashMessage = new FlashMessage($this->config);
         $flashMessage->set('success', 'saved');
-        $this->expectOutputString('<div class="alert alert-success alert-dismissible fade show" role="alert"> <strong>Item saved successfully</strong><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+        $this->expectOutputString('<div class="alert alert-success alert-dismissible fade show" role="alert"> <strong>Item saved successfully</strong>
+<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
         $flashMessage->display();
     }
 
@@ -53,7 +54,8 @@ final class FlashMessageTest extends TestCase
     {
         $flashMessage = new FlashMessage($this->config);
         $flashMessage->set('invalid', 'created');
-        $this->expectOutputString('<div class="alert alert-danger alert-dismissible fade show" role="alert"> <strong>ERROR: Invalid type "invalid" provided</strong><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+        $this->expectOutputString('<div class="alert alert-danger alert-dismissible fade show" role="alert"> <strong>ERROR: Invalid type "invalid" provided</strong>
+<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
         $flashMessage->display();
     }
 
@@ -61,7 +63,8 @@ final class FlashMessageTest extends TestCase
     {
         $flashMessage = new FlashMessage($this->config);
         $flashMessage->set('primary', 'invalid');
-        $this->expectOutputString('<div class="alert alert-danger alert-dismissible fade show" role="alert"> <strong>ERROR: Invalid action "invalid" provided</strong><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+        $this->expectOutputString('<div class="alert alert-danger alert-dismissible fade show" role="alert"> <strong>ERROR: Invalid action "invalid" provided</strong>
+<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
         $flashMessage->display();
     }
 
@@ -69,7 +72,8 @@ final class FlashMessageTest extends TestCase
     {
         $flashMessage = new FlashMessage($this->config);
         $flashMessage->set('invalid', 'invalid');
-        $this->expectOutputString('<div class="alert alert-danger alert-dismissible fade show" role="alert"> <strong>ERROR: Invalid type "invalid" provided</strong><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+        $this->expectOutputString('<div class="alert alert-danger alert-dismissible fade show" role="alert"> <strong>ERROR: Invalid type "invalid" provided</strong>
+<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
         $flashMessage->display();
     }
 }

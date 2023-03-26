@@ -43,7 +43,8 @@ class FlashMessage
     {
         foreach ($this->messages as $message) {
             printf(
-                '<div class="alert alert-%s alert-dismissible fade show" role="alert">%s <strong>%s</strong><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>',
+                '<div class="alert alert-%s alert-dismissible fade show" role="alert">%s <strong>%s</strong>
+<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>',
 
                 $message['type'],
                 $message['icon'],
