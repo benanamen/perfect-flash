@@ -5,17 +5,21 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=benanamen_perfect-flash&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=benanamen_perfect-flash)
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=benanamen_perfect-flash&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=benanamen_perfect-flash)
 
+[![CodeFactor](https://www.codefactor.io/repository/github/benanamen/perfect-flash/badge)](https://www.codefactor.io/repository/github/benanamen/perfect-flash)
+[![codebeat badge](https://codebeat.co/badges/3cfe8bcd-c24f-4c68-8b94-51e8e70e1d86)](https://codebeat.co/projects/github-com-benanamen-perfect-flash-master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/58219adf92afec78fa2b/maintainability)](https://codeclimate.com/github/benanamen/perfect-flash/maintainability)
+
 FlashMessage Usage Guide:
 
 The FlashMessage class is a convenient way to display messages to your users. It is initialized with a config array that contains messages for different types of actions. To use it, follow these steps:
 
-1. Import the FlashMessage class into your code:
+ 1. Import the FlashMessage class into your code:
 
 ```php
 use PerfectApp\Flash\FlashMessage;
 ```
 
-2. Create an instance of the FlashMessage class, passing the config array to its constructor:
+ 2. Create an instance of the FlashMessage class, passing the config array to its constructor:
 
 ```php
 $config = [
@@ -31,13 +35,13 @@ $config = [
 $flash = new FlashMessage($config);
 ```
 
-3. To display a message, call the `set()` method on the `$flash` object. Pass the type of message ('success', 'danger', etc.), the action performed ('create', 'update', etc.), and optionally an icon to display with the message:
+ 3. To display a message, call the `set()` method on the `$flash` object. Pass the type of message ('success', 'danger', etc.), the action performed ('create', 'update', etc.), and optionally an icon to display with the message:
 
 ```php
 $flash->set('success', 'create', '<i class="fas fa-check"></i>');
 ```
 
-4. To display all messages, call the `display()` method on the `$flash` object:
+ 4. To display all messages, call the `display()` method on the `$flash` object:
 
 ```php
 $flash->display();

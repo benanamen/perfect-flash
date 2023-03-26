@@ -7,12 +7,13 @@ namespace PerfectApp\Flash;
 class FlashMessage
 {
     private mixed $messages;
+
     private array $config;
 
     public function __construct($config)
     {
         $this->config = $config;
-        if (!isset($_SESSION['flash'])) {
+        if ($_SESSION['flash'] === FALSE) {
             $_SESSION['flash'] = [];
         }
         $this->messages = $_SESSION['flash'];

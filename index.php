@@ -3,17 +3,12 @@ declare(strict_types=1);
 
 require_once './vendor/autoload.php';
 
-// include config and flash message class
 use PerfectApp\Flash\FlashMessage;
 
 session_start();
 
 $config = require_once 'src/config/config-flash.php';
-
-// create new flash message instance
 $flash = new FlashMessage($config);
-
-// set a new flash message
 
 // Test Errors
 $flash->set('badType', 'created');
