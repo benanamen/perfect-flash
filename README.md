@@ -15,6 +15,11 @@
 [![codebeat badge](https://codebeat.co/badges/3cfe8bcd-c24f-4c68-8b94-51e8e70e1d86)](https://codebeat.co/projects/github-com-benanamen-perfect-flash-master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/58219adf92afec78fa2b/maintainability)](https://codeclimate.com/github/benanamen/perfect-flash/maintainability)
 
+# Code Coverage Reports  
+[Dashboard](https://htmlpreview.github.io/?https://raw.githubusercontent.com/benanamen/perfect-flash/master/tests/_output/coverage/dashboard.html)  
+[Overview](https://htmlpreview.github.io/?https://raw.githubusercontent.com/benanamen/perfect-flash/master/tests/_output/coverage/index.html)  
+[Detailed Report](https://htmlpreview.github.io/?https://raw.githubusercontent.com/benanamen/perfect-flash/master/tests/_output/coverage/FlashMessage.php.html)
+
 # FlashMessage Usage Guide:
 
 The FlashMessage class is a convenient way to display messages to your users. It is initialized with a config array that contains messages for different types of actions. To use it, follow these steps:
