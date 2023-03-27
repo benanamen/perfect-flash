@@ -17,6 +17,8 @@
 
 The FlashMessage class is a convenient way to display messages to your users. It is initialized with a config array that contains messages for different types of actions. To use it, follow these steps:
 
+(Assumes you have started a session)
+
 Import the FlashMessage class into your code:
 
 ```php
