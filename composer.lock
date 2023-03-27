@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "63d46d5a461741f122b67f98415e74a7",
+    "content-hash": "54c549c5c660e98af77d8517880d7b83",
     "packages": [],
     "packages-dev": [
         {
@@ -337,6 +337,47 @@
                 "source": "https://github.com/Codeception/Stub/tree/4.1.0"
             },
             "time": "2022-12-27T18:41:43+00:00"
+        },
+        {
+            "name": "jaschilz/php-coverage-badger",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JASchilz/PHPCoverageBadge.git",
+                "reference": "9def6f0c2649dc020849420e633a4819878bac03"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JASchilz/PHPCoverageBadge/zipball/9def6f0c2649dc020849420e633a4819878bac03",
+                "reference": "9def6f0c2649dc020849420e633a4819878bac03",
+                "shasum": ""
+            },
+            "bin": [
+                "bin/php-coverage-badger"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com",
+                    "homepage": "http://ocramius.github.com"
+                },
+                {
+                    "name": "Joseph Schilz",
+                    "email": "joseph@schilz.org",
+                    "homepage": "https://www.schilz.org"
+                }
+            ],
+            "description": "Create a code coverage badge from a PHPUnit Clover XML file.",
+            "homepage": "https://github.com/jaschilz/PhpCoverageBadge",
+            "support": {
+                "source": "https://github.com/JASchilz/PHPCoverageBadge/tree/master"
+            },
+            "time": "2017-07-21T20:03:56+00:00"
         },
         {
             "name": "myclabs/deep-copy",

@@ -21,10 +21,18 @@
   },
   "require-dev": {
     "codeception/codeception": "^5.0",
-    "codeception/module-asserts": "*"
+    "codeception/module-asserts": "*",
+    "jaschilz/php-coverage-badger": "^2.0"
+  },
+  "scripts": {
+    "test": [
+      "php vendor/bin/codecept run --coverage --coverage-html  --coverage-xml"
+    ]
   },
   "autoload": {
-    "files": ["src/config/config-flash.php"],
+    "files": [
+      "src/config/config-flash.php"
+    ],
     "psr-4": {
       "PerfectApp\\": "src/"
     }

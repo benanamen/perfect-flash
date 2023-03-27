@@ -1,3 +1,5 @@
+![Code Coverage](https://raw.githubusercontent.com/benanamen/perfect-flash/master/.github/badges/coverage.svg)
+
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=benanamen_perfect-flash&metric=bugs)](https://sonarcloud.io/summary/new_code?id=benanamen_perfect-flash)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=benanamen_perfect-flash&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=benanamen_perfect-flash)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=benanamen_perfect-flash&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=benanamen_perfect-flash)
