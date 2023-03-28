@@ -1,3 +1,4 @@
+[![codecov](https://codecov.io/gh/benanamen/perfect-flash/branch/master/graph/badge.svg?token=CQL8MLE91B)](https://codecov.io/gh/benanamen/perfect-flash)
 ![Code Coverage](https://raw.githubusercontent.com/benanamen/perfect-flash/master/.github/badges/coverage.svg)
 
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=benanamen_perfect-flash&metric=bugs)](https://sonarcloud.io/summary/new_code?id=benanamen_perfect-flash)
