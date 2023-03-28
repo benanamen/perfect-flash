@@ -30,4 +30,10 @@ jobs:
         run: composer install --prefer-dist --no-progress --no-interaction --no-suggest
 
       - name: Run tests
-        run: php vendor/bin/codecept run --coverage
+        run: php vendor/bin/codecept run --coverage --coverage-phpunit
+
+      - name: Upload to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./coverage.xml
+          verbose: true
