@@ -48,10 +48,10 @@ $config = [
 ];
 $flash = new FlashMessage($config);
 ```
-To display a message, call the `set()` method on the `$flash` object. Pass the type of message ('success', 'danger', etc.), the action performed ('create', 'update', etc.), and optionally an icon to display with the message:
+To display a message, call the `set()` method on the `$flash` object. Pass the type of message ('success', 'danger', etc.), the action performed ('create', 'update', etc.), and optionally an icon to display with the message. Icons require Bootstrap 5:
 
 ```php
-$flash->set('success', 'create', '<i class="fas fa-check"></i>');
+$flash->set('success', 'create', '<i class="bi bi-check-circle-fill"></i>');
 ```
 
 To display all messages, call the `display()` method on the `$flash` object:
